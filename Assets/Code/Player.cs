@@ -91,7 +91,7 @@ public class Player
     {
         DevMath.Vector2 forceDirection = new DevMath.Vector2(Input.GetAxis("Horizontal"), -Input.GetAxis("Vertical"));
 
-        rigidbody.UpdateVelocityWithForce(forceDirection, 5.0f, Time.deltaTime);
+        rigidbody.UpdateVelocityWithForce(forceDirection, 100.0f, Time.deltaTime);
 
         Position += rigidbody.Velocity;
     }
